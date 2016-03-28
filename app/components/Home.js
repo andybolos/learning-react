@@ -3,9 +3,7 @@ var transparentBg = require('../styles').transparentBg;
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 
-
-var Home = React.createClass({
-    render: function() {
+function Home () {
         return (
             <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
                 <h1>GitHub Battle Grounds</h1>
@@ -17,7 +15,6 @@ var Home = React.createClass({
                 </Link>
             </div>
         )
-    }
-});
+}
 
 module.exports = Home;
